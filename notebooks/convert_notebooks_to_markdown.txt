@@ -1,8 +1,0 @@
-jupyter nbconvert 000_data_inspection.ipynb --to markdown --output 000_data_inspection.md
-jupyter nbconvert 001_data_normalisation.ipynb --to markdown --output 001_data_normalisation.md
-jupyter nbconvert 002_pos_tagging.ipynb --to markdown --output 002_pos_tagging.md
-jupyter nbconvert 003_zipfs_law.ipynb --to markdown --output 003_zipfs_law.md
-jupyter nbconvert 004_grouping_domain_synonyms.ipynb --to markdown --output 004_grouping_domain_synonyms.md
-jupyter nbconvert 005_filtering_nouns.ipynb --to markdown --output 005_filtering_nouns.md
-jupyter nbconvert 006_pairing_features_to_opinions.ipynb --to markdown --output 006_pairing_features_to_opinions.md
-jupyter nbconvert 007_excerpts_extraction.ipynb --to markdown --output 007_excerpts_extraction.md
