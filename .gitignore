@@ -1,0 +1,16 @@
+# IDEA
+.idea
+
+# Credentials
+.env
+
+# Data
+data/raw/*
+data/interim/*
+!/data/reviews_Books_5.json.gz
+
+# Notebook Checkpoints
+.ipynb_checkpoints
+notebooks/.ipynb_checkpoints
+notebooks/sample_scripts/.ipynb_checkpoints
+
