@@ -1,2 +1,66 @@
-# feature-based_customer_review_mining
 Feature-based Customer Review Mining- An Implementation Solution Prototype
+==============================
+
+This project, summarises and explains the approach elaborated in [Kushal Bafna & Durga Toshniwal, 2013]. Its purpose is to serve as a prototype for an internal company project I am working on.
+
+In general, the problem I intend to address is that of allowing for customers to extract objective review summaries relevant to a particular product, without having to go through the trouble of reading the whole set of available reviews.
+
+The following sections, will cover the distinct steps that need to be followed. These concern:
+a) the identification of features of a product from customers' opinions,
+b) the extraction of opinions and the detection of their orientation or polarity relevant to each feature,
+c) the calculation of the final polarity of feature-opinions pairs, and
+d) the generation of feature based summarizations of the reviews, by through the extraction of the relevant excerpts with respect to each feature-opinions pair, and their placing into their respective feature based cluster.
+
+The assumption is that these feature-based excerpts can easily be digested by the user.
+
+Project Organization
+------------
+
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+
+
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
